@@ -1,0 +1,49 @@
+.status-label {
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-color: #e8e8e8;
+    width: 4em;
+    height: 4em;
+    z-index: 1;
+    -webkit-transition: border-color .1s ease;
+    transition: border-color .1s ease;
+
+    // -webkit-clip-path: polygon(75% 0, 100% 100%, 100% 0);
+    // clip-path: polygon(0 0, 100% 100%, 100% 0);
+   
+    .status-lable__status{
+        transform: rotate(45deg);
+            position: absolute;
+            top: 13px;
+            right: 0;
+            left: 10px;
+            font-size: .75rem;
+            font-weight: 400;
+    }
+}
+.status-label::after {
+
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-top: 0 solid transparent;
+    border-right: 4em solid transparent;
+    border-bottom: 4em solid transparent;
+    border-left: 0 solid transparent;
+    border-right-color: inherit;
+    -webkit-transition: border-color .1s ease;
+    transition: border-color .1s ease;
+
+    // -webkit-clip-path: polygon(75% 0, 100% 100%, 100% 0);
+    // clip-path: polygon(0 0, 100% 100%, 100% 0);
+}

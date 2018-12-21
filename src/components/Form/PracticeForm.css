@@ -1,0 +1,28 @@
+.practice-form .practice-form_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 0 10px;
+}
+@media (max-width: 960px) {
+  .practice-form .practice-form_row {
+    flex-direction: column;
+  }
+}
+.practice-form .practice-form_row .practice-form_col {
+  flex: 1;
+  margin: 0 15px 0 0;
+}
+@media (max-width: 960px) {
+  .practice-form .practice-form_row .practice-form_col {
+    flex: 0 0 100%;
+    width: 100%;
+    margin: 0 0 15px;
+  }
+}
+.practice-form .practice-form--actionBtn {
+  float: right;
+}
+.practice-form .practice-form_switch {
+  align-items: baseline;
+}

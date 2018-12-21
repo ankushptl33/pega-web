@@ -1,0 +1,66 @@
+.practice-card--header {
+    margin: 0 ;
+    display: flex;
+    .logo-practice--wrapper {
+        flex: 0 0 70px;
+        width: 70px;
+        max-width: 70px;
+        .logo-practice {
+            flex: 0 0 70px;
+            width: 70px;
+        }
+    }
+    .practice__singlecard--wrapper {
+        width: ~'calc(100% - 70px)';
+        flex: 0 0 ~'calc(100% - 70px)';
+        max-width: 100%;
+        .singlecard__group--content {
+            padding-top: 0px;
+            padding-left: 15px;
+            padding-bottom: 10px;
+
+            .singlecard__group {
+                margin: 0;
+                padding: 0;
+
+                .singlecard__id {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #333333;
+                }
+
+                .singlecard-payment__status {
+                    font-size: 10px;
+                    padding: 2px 5px;
+                    font-weight: normal;
+                    border-radius: 10px;
+                    line-height: normal;
+                    margin-left: 10px;
+                    height: 20px;
+                }
+                
+                .singlecard-stamp {
+                    height: 14px;
+                    width: 14px;
+                    margin-left: 10px;
+                }
+            }
+
+            .singlecard-status__circular {
+                padding: 2px 0px;
+
+                .singlecard-status__circular-chip {
+                    height: 20px;
+                }
+            }
+
+            .singlecard-status__practice {
+                padding: 2px 0px;
+
+                .singlecard-status____practice-name {
+                    height: 20px;
+                }
+            }
+        }
+    }
+}

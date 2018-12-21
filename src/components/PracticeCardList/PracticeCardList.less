@@ -1,0 +1,323 @@
+// @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+// @primary-font: 'Poppins',sans-serif;
+
+// @white-accent: #fff;
+// @success: #34bfa3;
+// @error: #f4516c;
+
+// // Card Status Colors
+// @active-status: #6ABC6A;
+// @inactive-status: #FD5858;
+// @pending-status: #F7932F;
+
+// // Card Icon Colors
+// @card-icons: #4194F2;
+
+// // footer color
+// @footer-border:#d5d5d5;
+
+// // Gray Colors
+// @gray-base: #000;
+// @gray-darker : lighten(@gray-base,13.5%); // #222
+// @gray-dark : lighten(@gray-base, 20%); // #333
+// @gray : lighten(@gray-base, 31.7%); // #515151 text use
+// @gray-light : lighten(@gray-base, 46.7%); // #777
+// @gray-lighter : lighten(@gray-base, 84.6%); // #d8d8d8 use for border
+// @gray-light-text: lighten(@gray-base, 66.2%); // #a9a9a9
+
+
+// .ui.card.componentbuilding__width_card {
+//     width: 100%;
+//     background-color: transparent;
+// }
+// .ui.cards.practice-page_container, .ui.card.componentbuilding__width_card {
+//     margin-left: -15px;
+//     margin-right: -15px;
+//     width: ~'calc(100% + 30px)'!important;
+//     .ui.dropdown .menu {
+//         width: 100%;
+//         border-radius: 4px;
+//     }
+//     .figmd-list_view {
+//         margin: 15px;
+//         padding: 10px;
+//         width: ~'calc(25% - 30px)' ;
+//         max-width: none;
+
+//         -webkit-box-shadow: 0 5px 15px 5px rgba(69,65,78,.08);
+//         box-shadow: 0 5px 15px 5px rgba(69,65,78,.08);
+              
+//        &.active--card{
+//             .ui.right.corner {
+//                 &.status-label {
+//                     color: @white-accent;
+//                     border-color: @active-status
+//                 }
+//             }
+//             .singlecard-payment__status {
+//                 background-color: @active-status;
+//                 color: @white-accent;
+//             }
+//             .active--agreement{
+//                 color: @active-status;
+//             }
+//             .pending--agreement{
+//                 color: @pending-status
+//             }
+//             .rejected--agreement{
+//                 color: @inactive-status;
+//             }
+//         } 
+        
+//         &.inactive--card{
+//             .ui.right.corner {
+//                 &.status-label {
+//                     border-color: @inactive-status;
+//                     color: @white-accent;
+//                 }
+//             }
+//             .singlecard-payment__status {
+//                 background-color: @inactive-status;
+//                 color: @white-accent;
+//             }
+//             .rejected--agreement{
+//                 color: @inactive-status;
+//             }
+//             .pending--agreement{
+//                 color: @pending-status
+//             }
+//             .active--agreement{
+//                 color: @active-status;
+//             }
+//         }
+
+//         @media (max-width:1629px ) and (min-width:1230px){
+//             width: ~'calc(33.33% - 30px)';
+//         }
+
+//         @media (max-width:1229px ) and (min-width:800px){
+//             width: ~'calc(50% - 30px)';
+//         }
+
+//         @media (max-width:799px ){
+//             width: ~'calc(100% - 30px)';
+//             max-width: 450px;
+//             margin: 15px auto;
+//         }
+//         .item{
+//             margin-left: 0;
+//         }
+//         >.content {
+//             border-top: 0px;
+//             padding: 5px;
+//             color: #515151;
+//         }
+
+//         .status-label--position {
+//             transform: rotate(45deg);
+//             position: absolute;
+//             top: 13px;
+//             right: 0;
+//             left: 10px;
+//             font-size: .75rem;
+//             font-weight: 400;
+//         }
+
+//         .practice--card_body {
+
+//             .practice-card--header {
+//                 margin: 0 -1rem;
+
+//                 h3.meta.singlecard__group {
+//                     margin: 0;
+//                     padding: 0 0 0px;
+
+//                     span.singlecard__id {
+//                         font-size: 14px;
+//                         font-weight: 400;
+//                         color:#333333;
+//                     }
+//                 }
+
+//                 span.singlecard-name {
+//                     font-size: 16px;
+//                     font-weight: 400;
+//                 }
+
+//                 .description {
+//                     margin: 4px 0 0 ;
+
+//                     .ui.circular.label.singlecard-status__circular {
+//                         font-size: 10px;
+//                         padding: 2px 10px !important;
+//                         margin: 0;
+//                         font-weight: normal;
+//                         line-height: normal;
+//                     }
+                    
+//                 }
+//                 .image.logo-practice {
+//                     flex: 0 0 70px;
+//                     width: 70px;
+//                 }
+                
+//                 .singlecard-payment__status {
+//                     font-size: 10px;
+//                     padding: 2px 10px !important;
+//                     font-weight: normal;
+//                     min-height: inherit;
+//                     border-radius: 10px;
+//                     line-height: normal;
+//                     margin-left: 10px;
+//                 }
+//                 .singlecard-stamp {
+//                     height: 14px;
+//                     width: 14px;
+//                     margin-left: 10px;
+//                 }
+//                 .ui.items.practice-card_group {
+//                     width: 100%;
+//                 }
+//             }
+//             .practice--card_footer{
+//                 .practice--card-footer__inner-content {
+//                     margin-right: 1rem;
+                    
+//                 }
+//             }
+
+//             p.singleCard__address_detail {
+//                 margin: 9px 0 6px;
+//                 font-size: 14px;
+//                 color:#333333;
+//                 font-weight: 500;
+//                 line-height: normal;
+//             }
+            
+//             .singlecard-call__icon {
+//                 transform: rotate(90deg);
+//                 color:@card-icons; 
+//             }
+//             .singlecard-mail__icon{
+//                 color: @card-icons;
+//             }
+//             .content.singlecard__group--content {
+//                 padding-left: 15px;
+//             }
+//             .singleCard-contact_details {
+//                 display: flex;
+//                 .item{
+//                     display: flex;
+//                     overflow: hidden;
+//                     width: ~'calc(100% - 140px)';
+//                     flex: 0 0 auto;
+//                     color: #969696;
+//                     .content.contact_details-call__icon {
+//                         margin-right: 15px;
+//                         span{
+//                             margin-left: 10px;
+//                         }
+//                     }
+//                     .contact_details-mail__icon {
+//                         width: 100%;
+//                         svg {
+//                             vertical-align: top;
+//                             margin-top: 1px;
+//                         }
+//                         span.email--span{
+//                             margin-left: 10px;
+//                             display: inline-block;
+//                             overflow: hidden;
+//                             text-overflow: ellipsis;
+//                             width: ~'calc(100% - 25px)';
+//                         }
+//                     }
+                    
+//                     &:first-child{
+//                         flex: 0 0 140px;
+//                     }
+//                 }
+
+//             }
+//         }
+//         .ui.grid.practice--card_body {
+
+//             .ui.grid.practice-card--header {
+//                 display: flex;
+//                 padding: 0 0 15px;
+//                 .ui.items.logo-practice {
+//                     width: 70px;
+//                     height: 70px;
+//                     border: solid 1px #000;
+//                 }
+//                 .practice-inline_info {
+//                     display: inline-block;
+//                     vertical-align: middle;
+//                 }
+//                 .singlecard-status__circular {
+//                     padding: 6px 10px;
+//                 }
+//             }
+//             .ui.label.singlecard-address {
+//                 font-weight: 700;
+//             }
+            
+//         }
+//         .practice--card_footer {
+//             margin-left:0;
+//             margin-right:0;
+//             justify-content: space-evenly;
+            
+//             .practice--card-footer__columns {
+//                 display: flex;
+//                 text-align: left;
+//                 border-right: solid 1px @footer-border;
+//                 padding: 0;
+//                 margin: 15px 0;
+//                 width: auto;
+//                 &.clinician{
+//                     .practice--card-footer-icon{
+//                         margin-left: 0px;
+//                     }
+//                 }
+//                 &.tin{
+                    
+//                 }
+//                 &.locations{
+//                     border-right: 0;
+//                     .practice--card-footer__inner-content {
+//                         margin-right: 0rem;
+//                     }
+//                 }
+                
+//             }
+//                 .practice--card-footer-icon{
+//                         font-size: 28px;
+//                         margin: 7px 6px;
+//                         color: @card-icons
+//                     }
+//                 .singlecard-count {
+//                     font-weight: 700;
+//                     margin-bottom: inherit;
+//                     font-size: 20px ;
+//                     color: #1D1D1D;
+//                 }
+//                 .provider_groups {
+//                     font-size: 12px ;
+//                     margin: 0;
+//                 }
+//         }
+//         .ui.grid.export-container {
+//             text-align: right;
+//             display: block;
+//             padding: 0 15px;
+//         }
+//         .export-dropdown {
+//             padding: 0px;
+//             text-align: right;
+//         }
+
+       
+//     }
+// }

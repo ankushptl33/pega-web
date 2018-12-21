@@ -1,0 +1,20 @@
+.practice--card_footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.practice--card_footer .practice--card-footer__columns-clinician {
+  display: flex;
+}
+.practice--card_footer
+  .practice--card-footer__columns-clinician
+  .practice--card-footer-icon {
+  flex: 1;
+  align-self: center;
+}
+.practice--card_footer
+  .practice--card-footer__columns-clinician
+  .practice--card-footer__inner-content {
+  flex: 1;
+}

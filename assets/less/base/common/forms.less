@@ -1,0 +1,47 @@
+// main: ../../main.less
+
+.ui.form  {
+  .ui.default.dropdown:not(.button)>.text, 
+  .ui.dropdown:not(.button)>.default.text{
+    color: @gray-base;
+    font-size: 14px;
+  }
+  .has-error {
+    .error.message {
+      display: block;
+    }
+  }
+  .ui.input input[type="text"]{
+    border: none;
+    border-radius: 0px;
+    // border-bottom: solid 1px #F1F2F6;
+    &:hover, &:focus{
+      // border-bottom: solid 1px @brand-primary;
+      border-radius: 0px;
+    }
+  }
+  .fields{
+    margin: 0 -.5em 2em;
+  }
+  .field{
+    .field-label{
+      font-size: 12px;
+      color: @gray;
+      font-weight: normal;
+    }
+    .field-input{
+      &::placeholder{
+        color: @gray-base;
+        font-size: 14px;
+        border-radius: 0px;
+      }
+      border: none;
+      // border-bottom: solid 1px #F1F2F6;
+      &:hover, &:focus{
+        // border-bottom: solid 1px @brand-primary;
+        border-radius: 0px;
+      }
+    }
+  }
+  
+}

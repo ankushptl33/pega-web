@@ -1,0 +1,105 @@
+
+@white-accent: #fff;
+@success: #34bfa3;
+@error: #f4516c;
+
+// Card Status Colors
+@active-status: #6ABC6A;
+@inactive-status: #FD5858;
+@pending-status: #F7932F;
+
+// Card Icon Colors
+@card-icons: #4194F2;
+
+// footer color
+@footer-border:#d5d5d5;
+
+.figmd-list_view--wrapper{
+    &[class^="MuiGrid-"] {
+        margin: 15px;
+        padding:0 !important;
+        max-width: 600px;
+        position: relative;
+        -webkit-box-shadow: 0 5px 15px 5px rgba(69,65,78,.08);
+        box-shadow: 0 5px 15px 5px rgba(69,65,78,.08);
+        flex: 0 0 ~'calc(25% - 30px)';
+        .figmd-list_view {
+            position: relative;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            &.active--card{
+                .status-label {
+                    color: @white-accent;
+                    border-color: @active-status;
+                }
+                .singlecard-payment__status {
+                    background-color: @active-status;
+                    color: @white-accent;
+                }
+                .active--agreement{
+                    color: @active-status;
+                }
+                .pending--agreement{
+                    color: @pending-status;
+                }
+                .rejected--agreement{
+                    color: @inactive-status;
+                }
+            } 
+    
+            &.inactive--card{
+                .status-label {
+                    border-color: @inactive-status;
+                    color: @white-accent;
+                }
+                .singlecard-payment__status {
+                    background-color: @inactive-status;
+                    color: @white-accent;
+                }
+                .rejected--agreement{
+                    color: @inactive-status;
+                }
+                .pending--agreement{
+                    color: @pending-status
+                }
+                .active--agreement{
+                    color: @active-status;
+                }
+            }
+            .practice--card_body{
+                padding:16px 15px 0;
+            }
+            .practice--card_footer--wrapper {
+                padding: 8px 15px;
+                .export-container {
+                    text-align: right;
+                    display: block;
+                    width: 100%;
+                    margin:0 ;
+                    button {
+                        margin:0 0 0 10px ;
+                    }
+                }
+            }
+        }
+        @media (max-width:1629px ) and (min-width:1230px){
+            width: ~'calc(33.33% - 30px)';
+            flex: 0 0 ~'calc(33.33% - 30px)';
+        }
+
+        @media (max-width:1229px ) and (min-width:800px){
+            width: ~'calc(50% - 30px)';
+            flex: 0 0 ~'calc(50% - 30px)';
+        }
+
+        @media (max-width:799px ){
+            width: ~'calc(100% - 30px)';
+            flex: 0 0 ~'calc(100% - 30px)';
+            max-width: 450px;
+            margin: 15px auto;
+        }
+    }
+}
+.figmd-list_view {
+    position: relative;
+}

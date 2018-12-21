@@ -1,0 +1,67 @@
+.practice-card--header {
+  margin: 0 -1rem;
+  display: flex;
+}
+.practice-card--header .logo-practice {
+  flex: 0 0 70px;
+  width: 70px;
+}
+.practice-card--header .singlecard__group--content {
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.practice-card--header .singlecard__group--content .singlecard__group {
+  margin: 0;
+  padding: 0;
+}
+.practice-card--header
+  .singlecard__group--content
+  .singlecard__group
+  .singlecard__id {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+.practice-card--header
+  .singlecard__group--content
+  .singlecard__group
+  .singlecard-payment__status {
+  font-size: 10px;
+  padding: 2px 5px;
+  font-weight: normal;
+  border-radius: 10px;
+  line-height: normal;
+  margin-left: 10px;
+  height: 20px;
+}
+.practice-card--header
+  .singlecard__group--content
+  .singlecard__group
+  .singlecard-stamp {
+  height: 14px;
+  width: 14px;
+  margin-left: 10px;
+}
+.practice-card--header
+  .singlecard__group--content
+  .singlecard-status__circular {
+  padding: 2px 0px;
+}
+.practice-card--header
+  .singlecard__group--content
+  .singlecard-status__circular
+  .singlecard-status__circular-chip {
+  height: 20px;
+}
+.practice-card--header
+  .singlecard__group--content
+  .singlecard-status__practice {
+  padding: 2px 0px;
+}
+.practice-card--header
+  .singlecard__group--content
+  .singlecard-status__practice
+  .singlecard-status____practice-name {
+  height: 20px;
+}

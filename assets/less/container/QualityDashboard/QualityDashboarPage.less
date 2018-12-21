@@ -1,0 +1,133 @@
+
+// main: ../container.less
+
+.quality-dashboard--page__wrapper {
+    .mastertab-outer{
+        .mastertab__tab {
+            .mastertab__tab__tab-content{
+                padding: 0;
+                     >span {
+                    padding-top: 0px;
+                    display: inline-block;
+                    padding-left: 22px;
+                    >span {
+                        padding: 6px 24px 6px 10px; 
+                    }
+                    
+                    font-size: 1.15rem;
+                    }
+                }
+            }
+        }
+    
+    .page-title__container {
+    }
+    .page_head-top-right__container {
+        text-align: right;
+        .select-practice__container {
+            justify-content: flex-end;
+            margin-bottom: 5px;
+            .select-practice--title__container {
+                flex: 0 0 150px;
+                line-height: 2.2rem;
+                margin: 0 15px 0 0;
+                font-size: .9rem;
+                align-self: center;
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .select-practice--dropdown__container {
+                flex: 0 0 236px;
+                text-align: left;
+            }
+            
+        }
+        .datatime-flexContainer {
+            padding:0 0 10px;
+        }
+    }
+
+    .tableRow {
+        &.tableHead {
+            .tableColumn {
+                color: @body-text-clr;
+                &.fig-viewDetails {
+                    flex: 0 0 140px;
+                    padding-left: 5px;
+                }
+                &.fig-measure {
+                    padding-right: 12px;
+                    .measure_description__wrapper {
+                        padding-right: 6px;
+                        font-size: 0.9rem;
+                    }
+                }
+                &.fig-id {
+                    flex: 0 0 70px;
+                }
+                &.fig-displayname{
+                    flex: 0 0 100px;
+                }
+               
+
+            
+            } 
+        }
+        &.dataTable__row{
+            .tableColumn {
+                .flex-align-items(center);
+                .flexbox();
+                color: @body-text-clr;
+                &.fig-viewDetails {
+                    flex: 0 0 140px;
+                    padding-left: 5px;
+                    justify-content: center;
+                    button {
+                        color:@gray-light-text;
+                        &:hover{
+                            color:@gray-light;
+                        }
+                    }
+                }
+                &.fig-measure {
+                    padding-right: 12px;
+                    .measure_description__wrapper {
+                        padding-right: 6px;
+                        font-size: 0.9rem;
+                        color: @gray-darker ;
+                    }
+                }
+                &.fig-id {
+                    flex: 0 0 70px;
+                    color:@gray-light-text;
+                }
+                &.fig-displayname{
+                    flex: 0 0 100px;
+                    color:@gray-light-text;
+                }
+            } 
+            .measure_wrapper {
+                .icon_measure {
+                    font-size: 26px;
+                    padding: 0 4px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+            .measure--filter__wrapper {
+                .measure--filter--bg__wrapper {
+                    > div {
+                        margin: -12px -12px -12px -11px;
+                    }
+                }
+            }
+
+        }  
+        
+    
+        
+}
+

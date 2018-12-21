@@ -1,0 +1,61 @@
+.figmd-list_view {
+  max-width: 450px;
+  position: relative;
+  -webkit-box-shadow: 0 5px 15px 5px rgba(69, 65, 78, 0.08);
+  box-shadow: 0 5px 15px 5px rgba(69, 65, 78, 0.08);
+}
+.figmd-list_view.active--card .status-label {
+  color: #fff;
+  border-color: #6abc6a;
+}
+.figmd-list_view.active--card .singlecard-payment__status {
+  background-color: #6abc6a;
+  color: #fff;
+}
+.figmd-list_view.active--card .active--agreement {
+  color: #6abc6a;
+}
+.figmd-list_view.active--card .pending--agreement {
+  color: #f7932f;
+}
+.figmd-list_view.active--card .rejected--agreement {
+  color: #fd5858;
+}
+.figmd-list_viewinactive--card.status-label {
+  border-color: #fd5858;
+  color: #fff;
+}
+.figmd-list_viewinactive--card .singlecard-payment__status {
+  background-color: #fd5858;
+  color: #fff;
+}
+.figmd-list_viewinactive--card .rejected--agreement {
+  color: #fd5858;
+}
+.figmd-list_viewinactive--card .pending--agreement {
+  color: #f7932f;
+}
+.figmd-list_viewinactive--card .active--agreement {
+  color: #6abc6a;
+}
+.figmd-list_view .practice--card_body .export-container {
+  padding: 0px;
+  text-align: right;
+}
+@media (max-width: 1629px) and (min-width: 1230px) {
+  .figmd-list_view {
+    width: calc(33.33% - 30px);
+  }
+}
+@media (max-width: 1229px) and (min-width: 800px) {
+  .figmd-list_view {
+    width: calc(50% - 30px);
+  }
+}
+@media (max-width: 799px) {
+  .figmd-list_view {
+    width: calc(100% - 30px);
+    max-width: 450px;
+    margin: 15px auto;
+  }
+}

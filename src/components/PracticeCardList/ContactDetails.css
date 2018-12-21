@@ -1,0 +1,24 @@
+.contact-details .singleCard-contact_details {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2px;
+}
+.contact-details .singleCard-contact_details .contact-detail-item {
+  padding: 2px 0;
+}
+.contact-details
+  .singleCard-contact_details
+  .contact-detail-item
+  .contact-text {
+  padding: 0 8px;
+}
+.contact-details .singleCard__address_detail {
+  display: flex;
+  align-items: center;
+}
+.contact-details .singleCard__address_detail .singlecard-mail__icon {
+  padding: 2px;
+}
+.contact-details .singleCard__address_detail .email--span {
+  padding: 2px;
+}
